@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Data Redundancy Removal System</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Data Redundancy Removal System</h1>
+
+    <form action="/submit" method="POST">
+
+        <input type="text"
+               name="name"
+               placeholder="Enter Name"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Enter Email"
+               required>
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+    {% if message %}
+
+        <h3>{{message}}</h3>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
